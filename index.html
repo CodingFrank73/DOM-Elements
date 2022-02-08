@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+
+<body>
+    <ul>
+        <div class="listContainer">
+            <li><a class="nav backcolor" id="navHome" href="#home">Home</a></li>
+            <li><a class="nav" id="navNews" href="#news">News</a></li>
+            <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+        </div>
+        <li class="nav"><a class="active" id="navChange" onclick="changeHome()">Change me</a></li>
+    </ul>
+
+
+    <div>
+        <form id="form1" onsubmit="return false">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" placeholder="Dein Name...">
+            <label for="nachname">Last Name</label>
+
+            <input type="text" id="nachname" name="nachname" placeholder="Dein Nachname...">
+            <label for="land">Land</label>
+
+            <select id="land" name="land">
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Usa">USA</option>
+            </select>
+            <input type="submit" value="Submit" onclick="getFormValues()">
+        </form>
+    </div>
+
+
+
+
+    <button onclick="small()">small</button>
+    <button onclick="middle()">middle</button>
+    <button onclick="big()">big & crazy</button>
+
+    <div class="wrapper">
+        <p id="element" class="small">Hallo Classlist</p>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
